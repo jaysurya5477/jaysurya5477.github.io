@@ -12,7 +12,7 @@ Live site: https://jaysurya5477.github.io
 | `style.css` | Light theme styles |
 | `script.js` | Animations, typing effect, mobile menu |
 | `assets/photo.jpg` | Profile photo |
-| `assets/Jayasurya_Lakkoju_Resume.pdf` | Public resume (no phone number) |
+| `assets/Jayasurya_Lakkoju_Resume.pdf` | Resume download |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
 Plain HTML, CSS and JavaScript. No build step.
