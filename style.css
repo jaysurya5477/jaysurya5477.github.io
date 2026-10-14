@@ -104,10 +104,13 @@ section { padding-top: 96px; }
 .btn.primary span { transition: transform .2s; } .btn.primary:hover span { transform: translateX(4px); }
 .btn.ghost { background: var(--surface); border: 1px solid var(--line); color: var(--navy); box-shadow: var(--shadow); }
 .btn.ghost:hover { border-color: var(--teal); }
-.socials { display: flex; gap: 22px; margin-top: 26px; }
-.socials a { color: var(--muted); font-size: .92rem; font-weight: 500; position: relative; }
-.socials a::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 2px; width: 0; background: var(--grad); transition: width .25s; }
-.socials a:hover { color: var(--navy); } .socials a:hover::after { width: 100%; }
+.socials { display: flex; gap: 12px; margin-top: 26px; }
+.icon-btn { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: var(--navy); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); transition: transform .2s, color .2s, background .2s, border-color .2s; }
+.icon-btn:hover { transform: translateY(-3px); color: #fff; background: var(--teal); border-color: var(--teal); }
+.icon-btn .i { width: 19px; height: 19px; }
+.i { width: 17px; height: 17px; flex: none; }
+.fact-link { display: inline-flex; align-items: center; gap: 8px; color: var(--navy); }
+.fact-link:hover { color: var(--teal); }
 
 .hero-visual { position: relative; max-width: 400px; width: 100%; justify-self: center; }
 .photo-frame { border-radius: 28px; padding: 6px; background: var(--grad); box-shadow: 0 30px 60px rgba(31, 58, 95, .22); animation: bob 7s ease-in-out infinite; }

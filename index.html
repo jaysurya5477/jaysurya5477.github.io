@@ -20,6 +20,12 @@
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></g></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></symbol>
+</svg>
 
 <div class="progress" id="progress"></div>
 <div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -52,10 +58,10 @@
         <a class="btn ghost" href="assets/Jayasurya_Lakkoju_Resume.pdf?v=3" target="_blank" rel="noopener">Download resume</a>
       </div>
       <div class="socials">
-        <a href="https://www.linkedin.com/in/jayasurya-lakkoju-a477a0234" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/jaysurya5477" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:jagath5477@gmail.com">Email</a>
-        <a href="tel:+918919283683">+91 89192 83683</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/jayasurya-lakkoju-a477a0234" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+        <a class="icon-btn" href="https://github.com/jaysurya5477" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+        <a class="icon-btn" href="mailto:jagath5477@gmail.com" aria-label="Email" title="Email: jagath5477@gmail.com"><svg class="i"><use href="#i-mail"/></svg></a>
+        <a class="icon-btn" href="tel:+918919283683" aria-label="Call mobile" title="Mobile: +91 89192 83683"><svg class="i"><use href="#i-phone"/></svg></a>
       </div>
     </div>
 
@@ -104,7 +110,7 @@
         <li><span>Main client</span>ALIMCO (S/4HANA)</li>
         <li><span>Modules</span>MM · SD · FI · CO · PP · PS · PM · HCM · FLM · QM · Basis</li>
         <li><span>Location</span>Kanpur, India</li>
-        <li><span>Phone</span><a href="tel:+918919283683">+91 89192 83683</a></li>
+        <li><span>Mobile</span><a class="fact-link" href="tel:+918919283683"><svg class="i"><use href="#i-phone"/></svg> +91 89192 83683</a></li>
       </ul>
     </div>
   </section>
@@ -253,10 +259,10 @@
       <h3>Let's build something <span class="grad">together</span></h3>
       <p>Have a role, a project or a question about SAP? Email or call me.</p>
       <div class="cta center">
-        <a class="btn primary" href="mailto:jagath5477@gmail.com">jagath5477@gmail.com</a>
-        <a class="btn ghost" href="tel:+918919283683">+91 89192 83683</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/jayasurya-lakkoju-a477a0234" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/jaysurya5477" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn primary" href="mailto:jagath5477@gmail.com"><svg class="i"><use href="#i-mail"/></svg> Email: jagath5477@gmail.com</a>
+        <a class="btn ghost" href="tel:+918919283683"><svg class="i"><use href="#i-phone"/></svg> Mobile: +91 89192 83683</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/jayasurya-lakkoju-a477a0234" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg> LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/jaysurya5477" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg> GitHub</a>
       </div>
     </div>
   </section>
