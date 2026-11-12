@@ -29,6 +29,18 @@ window.DEMOS = [
     desc: "Test simulation data",
     type: "video",
     src: "https://drive.google.com/file/d/1qfNV3oY9AaoesTjaJcTJVRz8iiEf1vdr/view?usp=sharing"
+  },
+  {
+    title: "Dashboard demo 3",
+    desc: "Test simulation data",
+    type: "video",
+    src: "https://drive.google.com/file/d/1zrGq5jGcpLpa1LXPDGBfF98EhRWXdvin/view?usp=sharing"
+  }, 
+  {
+    title: "Dashboard demo 4",
+    desc: "Test simulation data",
+    type: "video",
+    src: "https://drive.google.com/file/d/1k4Fwu3vTCgDmrWLMPQ70pSLZqxFf5rnw/view?usp=sharing"
   }
   // , { title: "Next demo", desc: "What it shows", src: "assets/demos/next-demo.mp4" }
 ];
